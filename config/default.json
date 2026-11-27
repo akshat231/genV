@@ -1,0 +1,39 @@
+{
+  "instanceType": "development",
+  "server": {
+    "host": "localhost",
+    "port": 5000,
+    "corsWhiteList": ["localhost"]
+  },
+  "database": {
+    "mongo": {
+      "url": "mongodb://mongo-local:27017",
+      "username": "admin",
+      "password": "admin",
+      "collections": {
+        "users": "userscollection-name"
+      }
+    },
+    "postgres": {
+      "host": "localhost",
+      "port": 5432,
+      "user": "postgres",
+      "database": "postgres",
+      "ssl": false
+    },
+    "redis": {
+      "host": "localhost",
+      "port": 6379
+    }
+  },
+  "kafka": {
+    "clientId": "app_name",
+    "brokers": ["localhost:9092"],
+    "topics": {
+      "health": "health-topic"
+    },
+    "groupIds": {
+      "health": "health-group"
+    }
+  }
+}

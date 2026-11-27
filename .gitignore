@@ -1,0 +1,34 @@
+# Dependencies
+node_modules
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Test coverage
+coverage
+
+# Generated video assets (VOICEOVER_PARENT_DIRECTORY)
+output/
+outputs/
+generated/
+media/
+tmp/
+temp/
+*.tmp.mp4
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+
+package-lock.json
